@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Michel Michels</Authors>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <Copyright>2019 Michel Michels</Copyright>
+    <Description>C# wrapper for the goiban-service</Description>
+    <PackageProjectUrl>https://github.com/MichelMichels/OpenIbanSharp</PackageProjectUrl>
+    <PackageTags>SimpleRestSharp openiban openibansharp goiban-service rest</PackageTags>
+    <RepositoryUrl>https://github.com/MichelMichels/OpenIbanSharp</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

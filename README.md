@@ -1,4 +1,4 @@
-[![Nuget](https://img.shields.io/nuget/v/SimpleRestSharp)](https://www.nuget.org/packages/SimpleRestSharp/)
+[![Nuget](https://img.shields.io/nuget/v/OpenIbanSharp)](https://www.nuget.org/packages/OpenIbanSharp/)
 
 # OpenIbanSharp
 
