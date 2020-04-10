@@ -4,21 +4,23 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Michel Michels</Authors>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Copyright>2019 Michel Michels</Copyright>
+    <Copyright>2020 Michel Michels</Copyright>
     <Description>C# wrapper for the goiban-service</Description>
     <PackageProjectUrl>https://github.com/MichelMichels/OpenIbanSharp</PackageProjectUrl>
     <PackageTags>SimpleRestSharp openiban openibansharp goiban-service rest</PackageTags>
     <RepositoryUrl>https://github.com/MichelMichels/OpenIbanSharp</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.1.0</Version>
+    <PackageReleaseNotes>RestSharp updated</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.6">
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="RestSharp" Version="106.6.10" />
-    <PackageReference Include="SimpleRestSharp" Version="1.0.0" />
+    <PackageReference Include="RestSharp" Version="106.10.1" />
+    <PackageReference Include="SimpleRestSharp" Version="1.1.0" />
   </ItemGroup>
 
 </Project>
