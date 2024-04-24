@@ -1,7 +1,7 @@
 <!-- omit in toc -->
 # OpenIbanSharp 💳
 
-[![Nuget](https://img.shields.io/nuget/v/OpenIbanSharp)](https://www.nuget.org/packages/OpenIbanSharp/)
+[![Nuget](https://img.shields.io/nuget/v/MichelMichels.OpenIbanSharp)](https://www.nuget.org/packages/MichelMichels.OpenIbanSharp/)
 [![.NET](https://github.com/MichelMichels/OpenIbanSharp/actions/workflows/dotnet.yml/badge.svg)](https://github.com/MichelMichels/OpenIbanSharp/actions/workflows/dotnet.yml)
 
 This projects is a C# wrapper library to [validate IBAN numbers with go-iban]("https://openiban.com/").
