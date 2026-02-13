@@ -41,4 +41,18 @@ public class OpenIbanClientTests
         Assert.AreEqual("BELFIUS BANK", response.BankData["name"]);
         Assert.AreEqual("GKCCBEBB", response.BankData["bic"]);
     }
+
+    [TestMethod]
+    public async Task Cancellation_Test()
+    {
+        // Arrange
+        string testIban = "BE41063012345610";
+        OpenIbanClient client = new(@"https://openiban.com/");
+        CancellationTokenSource cts = new();
+        CancellationToken token = cts.Token;
+        cts.Cancel();
+
+        // Act, Assert
+        await Assert.ThrowsAsync<OperationCanceledException>(() => client.Validate(testIban, token));
+    }
 }
