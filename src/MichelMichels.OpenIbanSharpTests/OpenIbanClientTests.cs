@@ -1,6 +1,7 @@
-﻿using MichelMichels.OpenIbanSharp.Models;
+﻿using MichelMichels.OpenIbanSharp;
+using MichelMichels.OpenIbanSharp.Models;
 
-namespace MichelMichels.OpenIbanSharp.Tests;
+namespace MichelMichels.OpenIbanSharpTests;
 
 [TestClass]
 public class OpenIbanClientTests
@@ -8,7 +9,7 @@ public class OpenIbanClientTests
     [TestMethod()]
     public void Constructor_BaseUrl_ArgumentNullReferenceException()
     {
-        Assert.ThrowsException<ArgumentNullException>(() => new OpenIbanClient(null!));
+        Assert.Throws<ArgumentNullException>(() => new OpenIbanClient(null!));
     }
 
     [TestMethod]
@@ -21,7 +22,7 @@ public class OpenIbanClientTests
         Task task = client.Validate(null!);
 
         // Assert
-        await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => task);
+        await Assert.ThrowsAsync<ArgumentNullException>(() => task);
     }
 
     [TestMethod]

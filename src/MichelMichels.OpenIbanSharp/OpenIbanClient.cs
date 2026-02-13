@@ -1,9 +1,5 @@
 ﻿using MichelMichels.OpenIbanSharp.Models;
-using System;
-using System.Collections.Generic;
-using System.Net.Http;
 using System.Net.Http.Json;
-using System.Threading.Tasks;
 
 namespace MichelMichels.OpenIbanSharp;
 
@@ -34,7 +30,7 @@ public class OpenIbanClient(string baseUrl) : IOpenIbanClient
 
         BankResponse result = await message.Content.ReadFromJsonAsync<BankResponse>() ?? throw new NotSupportedException();
 
-        cache.Add(iban, result);
+        cache.TryAdd(iban, result);
         return result;
     }
 
